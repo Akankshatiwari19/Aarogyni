@@ -40,10 +40,7 @@ CREATE TABLE `prescription` (
 --
 
 INSERT INTO `prescription` (`prescription_id`, `doctorId`, `patientId`, `title`, `prescription`) VALUES
-('patient1601293ab908fc6012951c5fef82.07605849', 'doctor6011c3466814e', 'patient1601293ab908fc', 'Breast Cancer', 'Lorem Ipsum'),
-('patient6011c2b66ae146011d42f5e97f0.06109630', 'doctor6011c3466814e', 'patient6011c2b66ae14', 'title', 'dummy pres'),
-('patient6011c2b66ae1460126fb1432c08.91420291', 'doctor6011c3466814e', 'patient6011c2b66ae14', 'demo t', 'demo p'),
-('patient6011c2b66ae14601289317a84a8.31996254', 'doctor6011c3466814e', 'patient6011c2b66ae14', 'demo tt', 'demo pp');
+
 
 -- --------------------------------------------------------
 
@@ -56,7 +53,8 @@ CREATE TABLE `users` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `occupation` varchar(255) NOT NULL
+  `occupation` varchar(255) NOT NULL,
+  `hospital_name` varchar(300) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -64,13 +62,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userid`, `username`, `password`, `email`, `occupation`) VALUES
-('doctor16012901ab5bb8', 'doctor1', 'doXT3DXgAQCNU', 'doctor1@gmail.com', 'doctor'),
-('doctor6011c3466814e', 'doctor', 'doXT3DXgAQCNU', 'doctor@gmail.com', 'doctor'),
-('patient1601293ab908fc', 'patient1', 'pa8fg5oAyLo8g', 'patient1@gmail.com', 'patient'),
-('patient260129e09637b1', 'patient2', 'pa8fg5oAyLo8g', 'patient2@gmail.com', 'patient'),
-('patient360129e53ca7d9', 'patient3', 'pa8fg5oAyLo8g', 'patient3@gmail.com', 'patient'),
-('patient6011c2b66ae14', 'patient', 'pa8fg5oAyLo8g', 'patient@gmail.com', 'patient'),
-('patient6011c3137c750', 'patient', 'pa8fg5oAyLo8g', 'patient@gmail.com', 'patient');
+
 
 --
 -- Indexes for dumped tables
